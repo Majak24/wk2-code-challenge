@@ -1,26 +1,23 @@
 <!DOCTYPE html>
-<html>
-    <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title> Shopping-LIST App</title>
-<link rel="stylesheet" href="style.css">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Shopping List</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="container">
-    <div class="shop-app">
-        <h2> Shopping-List </h2>
-        <div class="row">
-            <input type="text" id="input-box" placeholder="Write your items here">
-    <button onclick="addTask()">Add</button>
-         </div>
-        <ul id="list-container"> 
-           <!-- <li class="checked">Task 1</li>
-            <li>Task 2</li>
-            <li>Task 3</li>
-            <li>Task 4</li>
-            <li>Task 5</li> -->
-
-        </ul>
+    <div class="container">
+        <h1>Shopping List</h1>
+        <div class="input-container">
+            <input type="text" id="item-input" placeholder="Enter item">
+            <button id="add-btn">Add</button>
+        </div>
+        <ul id="shopping-list"></ul>
+        <div class="button-container">
+            <button id="mark-purchased-btn">Mark Purchased</button>
+            <button id="clear-list-btn">Clear List</button>
+        </div>
     </div>
     <script src="shopping.js"></script>
 </body>
